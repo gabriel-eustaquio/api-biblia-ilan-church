@@ -1,0 +1,59 @@
+body {
+  font-family: 'Merriweather', Arial, Helvetica;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+form {
+  padding-bottom: 50px;
+}
+
+form div.alert {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  animation: transicao 3s forwards;
+}
+
+@keyframes transicao {
+  from {
+    transform: translate3d(0px, 0px, 0px);
+  } to {
+    transform: translate3d(100px, 0px , 0px);
+  }
+}
+
+@media (max-width: 800px) {
+  form div.alert {
+    left: 0;
+  }
+  @keyframes transicao {
+    from {
+      transform: translate3d(0px, 0px, 0px);
+    } to {
+      transform: translate3d(0px, 20px , 0px);
+    }
+  }
+}
+
+section {
+  max-width: 75ch;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section h1 {
+  grid-column: 1/4;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+span {
+  color: red;
+}
+

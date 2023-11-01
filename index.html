@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="https://ilanchurch.online/wp-content/uploads/2020/03/cropped-favicon-1-32x32.png" sizes="32x32">
+  <title>Bíblia Digital - ILAN</title>
+</head>
+
+<body class="container text-bg-dark">
+  <header>
+    <img src="http://ilanchurch.online/wp-content/uploads/2020/03/logo_big.png" data-src="http://ilanchurch.online/wp-content/uploads/2020/03/logo_big.png" width="200" height="92" alt="Ilan Church Online">
+  </header>
+
+  <form class="container row row-cols-lg-auto g-3 align-items-center" method="GET">
+    <div class="col-12">
+      <label class="visually-hidden" for="palavra">Palavra</label>
+      <input class="form-control" type="text" name="palavra" id="palavra" placeholder="Palavra">
+    </div>
+    <div class="col-12">
+      <label class="visually-hidden" for="capitulo">Capitulo</label>
+      <input class="form-control" type="number" name="capitulo" id="capitulo" placeholder="Capítulo">
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" id="buscar"><i class="bi bi-search"></i> Buscar</button>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-danger" id="apagar"><i class="bi bi-trash"></i> Apagar Tudo</button>
+    </div>
+  </form>
+
+  <section class="container">
+
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
